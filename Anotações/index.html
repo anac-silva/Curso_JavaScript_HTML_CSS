@@ -8,73 +8,85 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <div>
+        <h1>HTML5 e CSS3</h1>
+    </div>
     <section>
-    <h1>Meu aprendizado em HTML e CSS</h1>
-    <hr>
-
-    <h2>Caderno de anotações</h2>
-    <p style="font-size: 15px;"><i>Esta página tem como propósito unificar em um único arquivo todo o conhecimento adquirido durante o curso ministrado pelo professor Gustavo Guanabara, do Curso em Vídeo, servindo como uma ferramenta prática para revisão e aplicação dos conceitos aprendidos</i></p>
-
-    <h3>Organização</h3>
-
-    <p>Todo programador deve ter uma pasta organizada, quando o projeto começar a ter diversas pastas e arquivos, importante manter tudo separado e organizado para não se perder!</p>
-
-    <h3>Iniciando os estudos</h3>
-    <ul>
-        <li><strong>Parágrafos</strong></li>
-    </ul>
-    <p>Para criação de parágrafos, basta utilizar a tag &lt;p&gt; e &lt;/p&gt;, entre as tags você poderá digitar o texto que quiser, para dar "enter" e criar uma quebra de linha, basta utilizar a tag &lt;br&gt;. Se for necessário um espaçamento muito grande, melhor configurar em CSS.</p>
-    <ul>
-        <li><strong>Emoticons</strong></li>
-    </ul>
-    <p>Para utilização de emojicons: acesse <a href="https://emojipedia.org/" target="_blank" ref="external">emojipedia</a>, basta copiar o cógido e colar no seu código HTML utilizando o código "&#x" na frente do código do emoji. &#x1F643</p>
-    <ul>
-        <li><strong>Imagens</strong></li>
-    </ul>
-    <p>Para seu site funcionar da melhor maneira, é necessário que ele seja leve, um item que pode acabar pesando em seu site são as <strong>imagens</strong>, para isso, você pode usar o seu photoshop ou o GIMP para reduzir sua imagem para uma resolução menor, desta forma você pode deixar a imagem do tamanho que vc precisa e não pesar na hora de carregar seu site.      <br><strong>OBS:</strong>Reduzir o tamanho utilizando os 4 cantos da imagem não reduz o tamanho do arquivo em si, por isso importante redimencionar a imagem, desta forma o arquivo também fica mais leve.</p>
-    <p>Para carregar uma imagem em HTML basta utilizar o comando <strong>&lt;img src "link da imagem" alt = "colocar uma descrição da imagem"&gt;</strong></p>
-    <p>O link da imagem pode ser tanto de um arquivo interno do seu computador, como um link de algum site, neste caso no lugardo link da imagem, em vez de colocar o caminho do seu computador basta colocar o endereço completo do site.</p>
-
-    <ul>
-        <li><strong>Ícone</strong></li>
-    </ul>
-    <p>Para adicionar um icone junto ao título do site, basta procurar uma logo que seja ideal para seu site(se atentar aos direitos autorais)acessar <a href="https://favicon.io/favicon-converter/" target="_blank" ref="external">favicon</a>, esse é um dos sites que podem ser utilizados para converter sua imagem em um arquivo "favicon.io" para uso no site.</p>
-    <p>Após gerar a imagem de logo, basta ir na área <strong>Head</strong> acima do item <strong>Title</strong> e utilizar a tag &lt;link:favicon&gt;, selecionar a foto na sua pasta e carregar a pagina.  </p>
     
-    <ul>
-        <li><strong>Sua página</strong></li>
-    </ul>
-    <p>Para ver como sua página está ficando há 2 opções:</p>
-    <ol>
-        <li>clicando no arquivo do seu projeto salvo na pasta do seu computador: Para cada alteração no cógido, você terá que clicar em atualizar a página para ver a alteração</li>
-        <li>Na guia extensões do VS, instale a extensão "live server", após instalado, acesse o arquivo HTML do seu projeto, aperte "ctrl+shift+p" e clique em live server, seu arquivo irá abrir em uma guia separada, e todas as alterações aparecerão em tempo real. </li>
-    </ol>
-    <ul>
-        <li><strong>Hierarquia de títulos</strong></li>
-    </ul>
-    <p>Hierarquias de títulos desempenham um papel crucial na estruturação e organização de um site, tanto em termos de usabilidade quanto de otimização para mecanismos de busca. Os títulos são elementos fundamentais do HTML, fornecendo não apenas estilo visual, mas também informações sobre a importância e o conteúdo de uma página.</p>
-    <p>Em um site o recomendado é que tenha apenas 1 H1 para indicar o titulo principal. A hierarquia de títulos é geralmente representada por tags HTML como &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, e &lt;h6&gt;, onde &lt;h1&gt; é o título mais importante e &lt;h6&gt; é o menos importante.</p>
-    <p style="text-align: center;"><img src="Imagens/H1-H2-H3.png" alt="Exemplo ordem títulos"></p>
-    <ul>
 
-        <li><strong>Formatação de textos</strong></li>
-    </ul>
-    <p>Tags HTML desempenham um papel fundamental na atribuição de significado ao conteúdo de uma página da web, tornando-o semântico e facilitando a compreensão tanto para os navegadores quanto para os mecanismos de busca. A semântica em HTML é fundamental porque fornece significado e estrutura ao conteúdo de uma página da web.</p>
-    <ol>
-        <li><strong>Negrito:</strong> Para deixar um trecho ou palavra em negrito é necessário colocar o item selecionado entre &lt;strong&gt;.</li>
-        <li><em>Itálico:</em> Para deixar um trecho ou palavra em itálico é necessário colocar o item selecionado entre a tag &lt;em&gt;. </li>
-        <li>Texto sobescrito: Podemos representar a seguinte equação x<sup>20</sup>+3 utilizando a tag &lt;sup&gt; no numero 20, desta forma o número fica sobescrito.</li>
-        <li>Texto subscrito: Um exemplo é para escrever a fórmula da água H<sub>2</sub>O </li>
-        <li><mark>Marca texto</mark>: Para destacar um trecho de um texto muito importante na qual deseja chamar atenção direta, pode ser utilizada a tag &lt;mark&gt;, desta forma o texto selecionado ficará destacado.</li>
-        <li><del>Texto deletado: </del> Para riscar uma parte de um trecho do texto que até pode ser lido, mas deve ser desconsiderado, é necessário a utilização da tag &lt;del&gt;.</li>
-        <li><ins>Texto inserido:</ins> Para destacar um trecho novo inserido em um texto, contrato, etc. Utiliza-se a tag &lt;ins&gt;.</li>
-        <li>Trechos de código: Muitas vezes é necessário compartilhar um código em um site, para que o código não se misture ao HTML do seu site, pode ser utilizado a tag &lt;code&gt;, desta forma seu código aparecerá monoespaçado e facilitará a leitura do código por outro programador. </li> 
-        <li>Citações: Para adicionar citações ao seu site, pode ser utilizado a tag &lt;q&gt;(em inglês, quote), desta forma poderá ser incluido uma citação no meio de um parágrafo com a devida formatação. <br> Para citações mais longas, pode ser utilizado a tag &lt;bloquote&gt;. Pode ser colocado um link para o texto original colocando o parâmetro "cite" dentro da tag <p>Exemplo: &lt;blockquote cite="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf"></p> </li>
-        <li>Abreviações: Em muitos casos é necessário utilizar a abreviação das palavras, porém existe uma nova funcionalidade do HTML5 que permite que você coloque o que a abreviação significa utilizando a tag &lt;abbr title="significado da abreviação">Abreviação&lt;/abbr&gt;</li>
+        <h2>Caderno de anotações</h2>
+        <p style="font-size: 15px;"><i>Esta página tem como propósito unificar em um único arquivo todo o conhecimento adquirido durante o curso ministrado pelo professor Gustavo Guanabara, do Curso em Vídeo, servindo como uma ferramenta prática para revisão e aplicação dos conceitos aprendidos</i></p>
+
+        <h3>Organização</h3>
+
+        <p>Todo programador deve ter uma pasta organizada, quando o projeto começar a ter diversas pastas e arquivos, importante manter tudo separado e organizado para não se perder!</p>
+
+        <h3>Iniciando os estudos</h3>
+        <ul>
+            <li><strong>Parágrafos</strong></li>
+        </ul>
+        <p>Para criação de parágrafos, basta utilizar a tag &lt;p&gt; e &lt;/p&gt;, entre as tags você poderá digitar o texto que quiser, para dar "enter" e criar uma quebra de linha, basta utilizar a tag &lt;br&gt;. Se for necessário um espaçamento muito grande, melhor configurar em CSS.</p>
+        <ul>
+            <li><strong>Emoticons</strong></li>
+        </ul>
+        <p>Para utilização de emojicons: acesse <a href="https://emojipedia.org/" target="_blank" ref="external">emojipedia</a>, basta copiar o cógido e colar no seu código HTML utilizando o código "&#x" na frente do código do emoji. &#x1F643</p>
+        <ul>
+            <li><strong>Imagens</strong></li>
+        </ul>
+        <p>Para seu site funcionar da melhor maneira, é necessário que ele seja leve, um item que pode acabar pesando em seu site são as <strong>imagens</strong>, para isso, você pode usar o seu photoshop ou o GIMP para reduzir sua imagem para uma resolução menor, desta forma você pode deixar a imagem do tamanho que vc precisa e não pesar na hora de carregar seu site.      <br><strong>OBS:</strong>Reduzir o tamanho utilizando os 4 cantos da imagem não reduz o tamanho do arquivo em si, por isso importante redimencionar a imagem, desta forma o arquivo também fica mais leve.</p>
+        <p>Para carregar uma imagem em HTML basta utilizar o comando <strong>&lt;img src "link da imagem" alt = "colocar uma descrição da imagem"&gt;</strong></p>
+        <p>O link da imagem pode ser tanto de um arquivo interno do seu computador, como um link de algum site, neste caso no lugardo link da imagem, em vez de colocar o caminho do seu computador basta colocar o endereço completo do site.</p>
+
+        <ul>
+            <li><strong>Ícone</strong></li>
+        </ul>
+        <p>Para adicionar um icone junto ao título do site, basta procurar uma logo que seja ideal para seu site(se atentar aos direitos autorais)acessar <a href="https://favicon.io/favicon-converter/" target="_blank" ref="external">favicon</a>, esse é um dos sites que podem ser utilizados para converter sua imagem em um arquivo "favicon.io" para uso no site.</p>
+        <p>Após gerar a imagem de logo, basta ir na área <strong>Head</strong> acima do item <strong>Title</strong> e utilizar a tag &lt;link:favicon&gt;, selecionar a foto na sua pasta e carregar a pagina.  </p>
         
-    </ol>
-    <p><strong>OBS: As tags devem ter abertura e fechamento.</strong></p>
+        <ul>
+            <li><strong>Sua página</strong></li>
+        </ul>
+        <p>Para ver como sua página está ficando há 2 opções:</p>
+        <ol>
+            <li>clicando no arquivo do seu projeto salvo na pasta do seu computador: Para cada alteração no cógido, você terá que clicar em atualizar a página para ver a alteração</li>
+            <li>Na guia extensões do VS, instale a extensão "live server", após instalado, acesse o arquivo HTML do seu projeto, aperte "ctrl+shift+p" e clique em live server, seu arquivo irá abrir em uma guia separada, e todas as alterações aparecerão em tempo real. </li>
+        </ol>
+        <ul>
+            <li><strong>Hierarquia de títulos</strong></li>
+        </ul>
+        <p>Hierarquias de títulos desempenham um papel crucial na estruturação e organização de um site, tanto em termos de usabilidade quanto de otimização para mecanismos de busca. Os títulos são elementos fundamentais do HTML, fornecendo não apenas estilo visual, mas também informações sobre a importância e o conteúdo de uma página.</p>
+        <p>Em um site o recomendado é que tenha apenas 1 H1 para indicar o titulo principal. A hierarquia de títulos é geralmente representada por tags HTML como &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, e &lt;h6&gt;, onde &lt;h1&gt; é o título mais importante e &lt;h6&gt; é o menos importante.</p>
+        <p style="text-align: center;"><img src="Imagens/H1-H2-H3.png" alt="Exemplo ordem títulos"></p>
+
+        <ul>
+            <li><strong>Formatação de textos</strong></li>
+        </ul>
+        <p>Tags HTML desempenham um papel fundamental na atribuição de significado ao conteúdo de uma página da web, tornando-o semântico e facilitando a compreensão tanto para os navegadores quanto para os mecanismos de busca. A semântica em HTML é fundamental porque fornece significado e estrutura ao conteúdo de uma página da web.</p>
+        <ol>
+            <li><strong>Negrito:</strong> Para deixar um trecho ou palavra em negrito é necessário colocar o item selecionado entre &lt;strong&gt;.</li>
+            <li><em>Itálico:</em> Para deixar um trecho ou palavra em itálico é necessário colocar o item selecionado entre a tag &lt;em&gt;. </li>
+            <li>Texto sobescrito: Podemos representar a seguinte equação x<sup>20</sup>+3 utilizando a tag &lt;sup&gt; no numero 20, desta forma o número fica sobescrito.</li>
+            <li>Texto subscrito: Um exemplo é para escrever a fórmula da água H<sub>2</sub>O </li>
+            <li><mark>Marca texto</mark>: Para destacar um trecho de um texto muito importante na qual deseja chamar atenção direta, pode ser utilizada a tag &lt;mark&gt;, desta forma o texto selecionado ficará destacado.</li>
+            <li><del>Texto deletado: </del> Para riscar uma parte de um trecho do texto que até pode ser lido, mas deve ser desconsiderado, é necessário a utilização da tag &lt;del&gt;.</li>
+            <li><ins>Texto inserido:</ins> Para destacar um trecho novo inserido em um texto, contrato, etc. Utiliza-se a tag &lt;ins&gt;.</li>
+            <li>Trechos de código: Muitas vezes é necessário compartilhar um código em um site, para que o código não se misture ao HTML do seu site, pode ser utilizado a tag &lt;code&gt;, desta forma seu código aparecerá monoespaçado e facilitará a leitura do código por outro programador. </li> 
+            <li>Citações: Para adicionar citações ao seu site, pode ser utilizado a tag &lt;q&gt;(em inglês, quote), desta forma poderá ser incluido uma citação no meio de um parágrafo com a devida formatação. <br> Para citações mais longas, pode ser utilizado a tag &lt;bloquote&gt;. Pode ser colocado um link para o texto original colocando o parâmetro "cite" dentro da tag <p>Exemplo: &lt;blockquote cite="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf"></p> </li>
+            <li>Abreviações: Em muitos casos é necessário utilizar a abreviação das palavras, porém existe uma nova funcionalidade do HTML5 que permite que você coloque o que a abreviação significa utilizando a tag &lt;abbr title="significado da abreviação">Abreviação&lt;/abbr&gt;</li>
+            
+        </ol>
+        <p><strong>OBS: As tags devem ter abertura e fechamento.</strong></p>
         <p><strong>OBS 2: Uma forma de facilitar no momento de montar a estrutura do seu site e adicionar as tags é digitar o inicio da tag e apertar tab no teclado. Ex: quero adicionar a tag &lt;p&gt;, apenas digitando p e apertando a tecla tab fará com que a tag seja aberta e fechada, sendo necessário apenas a inclusão do conteúdo. </strong></p>
+        <p>Está gostando do conteúdo até aqui? siga meu perfil no GitHub para conhecer outros projetos clicando <a href="https://github.com/anac-silva" target="_blank" ref="external">aqui</a></p>
+        <ul>
+            <li><strong>Âncoras</strong></li>
+        </ul>
+        <p>Como você pôde ver acima, é possível colocar no seu site um link para outro site, basta utilizar a tag &lt;a href="https://github.com/anac-silva" target="_blank" ref="external" &gt;. Utilizando dentro do link _blank é possível abrir o link em outra guia sem perder o site que estava aberto, facilitando a navegação do usuário. </p>
+        <p>Também é possível realizar a relação com uma página interna. Quando você vai criar um site, é necessário a criação de várias páginas, para facilitar o acesso, pode ser gerado o link dentro do próprio site: 
+        </p>
+        <p style="text-align: center;"><img src="Imagens/página.png" alt="Exemplo código para mudar de página"></p>
+        <p>O exemplo acima pode ser utilizado para quando quizer que o usuário mude de página ao clicar em um texto. Para uso de imagem, basta adicionar o link da imagem no lugar do texto para que o usuário consiga mudar de página ao clicar.</p>
+        
     </section>
     
 </body>
