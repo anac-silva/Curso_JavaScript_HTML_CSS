@@ -81,12 +81,20 @@
         <ul>
             <li><strong>Âncoras</strong></li>
         </ul>
-        <p>Como você pôde ver acima, é possível colocar no seu site um link para outro site, basta utilizar a tag &lt;a href="https://github.com/anac-silva" target="_blank" ref="external" &gt;. Utilizando dentro do link _blank é possível abrir o link em outra guia sem perder o site que estava aberto, facilitando a navegação do usuário. </p>
-        <p>Também é possível realizar a relação com uma página interna. Quando você vai criar um site, é necessário a criação de várias páginas, para facilitar o acesso, pode ser gerado o link dentro do próprio site: 
+        <p>Como você pôde ver acima, é possível colocar no seu site um link para outro site, basta utilizar a tag &lt;a href="https://github.com/anac-silva" target="_blank" rel="external" &gt;. Utilizando dentro do link _blank é possível abrir o link em outra guia sem perder o site que estava aberto, facilitando a navegação do usuário. </p>
+        <p>Há dois tipos de link: Interno e Externo.<br> Link interno é quando o usuário irá navegar dentro do próprio site, então no lugar de "_blank", basta utilizar "_self" e "external" utilizar "next"</p>
+        <p> Quando você vai criar um site, é necessário a criação de várias páginas, para facilitar o acesso, pode ser gerado o link dentro do próprio site: 
         </p>
         <p style="text-align: center;"><img src="Imagens/página.png" alt="Exemplo código para mudar de página"></p>
         <p>O exemplo acima pode ser utilizado para quando quizer que o usuário mude de página ao clicar em um texto. Para uso de imagem, basta adicionar o link da imagem no lugar do texto para que o usuário consiga mudar de página ao clicar.</p>
-        
+        <p>Para retornar a página basta utilizar o mesmo link, porém se a página estiver em pastas separadas para sair da pasta e acessar o outro arquivo é necessário adicionar ../"nome do arquivo".</p>
+
+        <ul>
+            <li><strong>Links para dowload</strong></li>
+        </ul>
+        <p>Dentro da página é possível colocar links para dowload de arquivos, porém é necessário se atentar os formatos, pois nem todos navegadores suportam. Isso vale para audio e vídeo também. Para adicionar basta utilizar a tag:
+        </p>
+        <p>&lt;a href="nome do arquivo.pdf" download="nome do arquivo.pdf" type="application/pdf">nome que aparecerá para a pessoa clicar e baixar&lt;/a&gt;</p>
     </section>
     
 </body>
