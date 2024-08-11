@@ -1,68 +1,83 @@
 @use '../abstract/variaveis';
-
 @use '../abstract/mixins';
 
-header{
-    background-image: variaveis.$gradiente-primario;
+header {
+    background: variaveis.$gradiente-primario;
     padding: 2rem;
-    nav{
+
+    nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.6rem;
-        .linha{
+
+        .linha {
             border-top: 1px solid black;
             width: 80%;
         }
-        ul{
+
+        ul {
             display: inline-flex;
             gap: 2rem;
+
             li {
                 list-style-type: none;
-            }   
-            a{
+            }
+
+            a {
                 text-decoration: none;
                 @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria);
                 font-weight: 500;
-            }
-            a:hover{
-                font-weight: 900;
+                transition: .3s;
+                &:hover{
+                    transform: scale(1.2);
+                    font-weight: 700;
+                }
             }
         }
     }
 
-    #home{
+    #home {
         max-width: 1040px;
         @include mixins.margem-central(80%);
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .textos-home{
-            max-width: 464px;
-            h1{
+
+        .textos-home {
+            width: 464px;
+
+            h1 {
                 font-size: 42px;
                 color: variaveis.$cor-primaria;
                 margin-bottom: 2rem;
                 font-family: variaveis.$ft-titulos;
-                span{
+
+                span {
                     color: variaveis.$cor-secundaria;
                 }
             }
-            .btn-main{
+
+            .btn-main {
                 width: 280px;
                 height: 66px;
-                background-color: variaveis.$cor-secundaria;
-                border-radius: 40px;
-                color: #FFFFFF;
-                font-family: variaveis.$ft-textos;
-                font-size: 22px;
+                color: #fff;
                 border: none;
-                font-weight: 600;
+                outline: none;
+                border-radius: 66px;
+                background: variaveis.$cor-default;
+                font-size: 1.3rem;
+                transition: .3s;
+                &:hover{
+                    background: variaveis.$cor-secundaria;
+                }
             }
         }
-        .img-home{
+
+        .img-home {
             max-width: 474px;
-            img{
+
+            img {
                 width: 100%;
             }
         }

@@ -3,8 +3,8 @@
 #nosso-espaco{
     @include mixins.margem-central(80%);
     .detalhes{
-        display: inline-flex;
         width: 100%;
+        display: inline-flex;
         align-items: center;
         justify-content: space-around;
         gap: 2rem;
@@ -18,7 +18,7 @@
                 @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.8rem, variaveis.$cor-secundaria);
                 font-weight: 500;
             }
-            .infos {
+            .infos{
                 @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria);
             }
             .separador{
@@ -30,4 +30,3 @@
         }
     }
 }
-

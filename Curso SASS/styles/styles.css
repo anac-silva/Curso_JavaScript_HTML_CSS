@@ -1,5 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
-  background-image: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
   padding: 2rem;
 }
 header nav {
@@ -25,9 +31,11 @@ header nav ul a {
   font-size: 1rem;
   color: #0C0421;
   font-weight: 500;
+  transition: 0.3s;
 }
 header nav ul a:hover {
-  font-weight: 900;
+  transform: scale(1.2);
+  font-weight: 700;
 }
 header #home {
   max-width: 1040px;
@@ -38,7 +46,7 @@ header #home {
   justify-content: space-between;
 }
 header #home .textos-home {
-  max-width: 464px;
+  width: 464px;
 }
 header #home .textos-home h1 {
   font-size: 42px;
@@ -52,13 +60,16 @@ header #home .textos-home h1 span {
 header #home .textos-home .btn-main {
   width: 280px;
   height: 66px;
-  background-color: #4e75ff;
-  border-radius: 40px;
-  color: #FFFFFF;
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  color: #fff;
   border: none;
-  font-weight: 600;
+  outline: none;
+  border-radius: 66px;
+  background: #CAD4FA;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+header #home .textos-home .btn-main:hover {
+  background: #4e75ff;
 }
 header #home .img-home {
   max-width: 474px;
@@ -72,8 +83,8 @@ header #home .img-home img {
   width: 80%;
 }
 #nosso-espaco .detalhes {
-  display: inline-flex;
   width: 100%;
+  display: inline-flex;
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
@@ -177,7 +188,6 @@ header #home .img-home img {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  padding-bottom: 80px;
 }
 #contatos .contatos-imgs {
   max-width: 50%;
@@ -233,9 +243,9 @@ header #home .img-home img {
 #contatos .contatos-form .inputs .btn {
   background: #CAD4FA;
   margin-top: 2rem;
-  width: 100%;
   color: white;
   font-size: 1rem;
+  width: 100%;
   transition: 0.3s;
 }
 #contatos .contatos-form .inputs .btn:hover {
@@ -243,16 +253,11 @@ header #home .img-home img {
 }
 
 footer {
-  background-color: #E8F5C8;
-  padding: 20px;
+  background: #E8F5C8;
+  padding: 2rem;
   text-align: center;
+  margin-top: 5rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #0C0421;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }/*# sourceMappingURL=styles.css.map */
